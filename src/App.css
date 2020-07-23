@@ -1,3 +1,7 @@
+:root{
+
+}
+
 .App {
   text-align: center;
 }
@@ -36,3 +40,54 @@
     transform: rotate(360deg);
   }
 }
+a {
+  text-decoration: none;
+}
+
+.fontSizeSmall {
+  font-size: var(--font-size-small);
+}
+
+.fontSizeMedium {
+  font-size: var(--font-size-medium);
+}
+
+.fontSizeLarge {
+  font-size: var(--font-size-large);
+}
+
+.fontSizeSmallLight {
+  font-size: var(--font-size-small);
+  color: var(--dark-grey);
+}
+
+.fontSizeSmallBold {
+  font-size: var(--font-size-small);
+  font-weight: 600;
+}
+
+.fontSizeLargeBold {
+  font-size: var(--font-size-large);
+  font-weight: 800;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .cardWidth{width: 82vw; margin: 10 0  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
+

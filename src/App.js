@@ -1,24 +1,33 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+//React
+import React from "react";
+
+//Components
+import WeatherCard from "./components/WeatherCard/WeatherCard";
+import City from "./components/City/City";
+
+//Material UI
+import { makeStyles } from "@material-ui/core/styles";
+import Box from "@material-ui/core/Box";
+
+const useStyles = makeStyles({
+  container: {
+    display: "flex",
+    flexDirection: "column",
+    position: "relative",
+    zIndex: 2,
+  }
+});
 
 function App() {
+  const classes = useStyles();
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Box className={classes.container} id="Container">
+        <Box borderColor="primary.main" {...classes.box}>
+          <City />
+          <WeatherCard />
+        </Box>
+      </Box>
     </div>
   );
 }
